@@ -75,56 +75,6 @@ void list_processes()
     syscall(SYS_close, fd);  // Fecha o diretório /proc
 }
 
-// void list_processes()
-// {
-//     int process_count = 0;
-//     struct dirent *entry;
-//     DIR *dir = opendir("/proc");
-
-//     if (dir == NULL)
-//     {
-//         perror("Erro ao abrir /proc");
-//         return;
-//     }
-
-//     printf("%-10s %-50s\n", "PID", "COMMAND");
-
-//     while ((entry = readdir(dir)) != NULL)
-//     {
-//         if (isdigit(entry->d_name[0]))
-//         { // Se o nome do diretório começar com um número, é um PID
-//             process_count++;
-//             char comm_path[256];
-//             snprintf(comm_path, sizeof(comm_path), "/proc/%s/comm", entry->d_name);
-
-//             FILE *comm_file = fopen(comm_path, "r");
-//             if (comm_file)
-//             {
-//                 char comm[256];
-//                 if (fgets(comm, sizeof(comm), comm_file) != NULL)
-//                 {
-//                     // Remove newline character, if any
-//                     comm[strcspn(comm, "\n")] = '\0';
-//                     printf("%-10s %-50s\n", entry->d_name, comm);
-//                 }
-//                 else
-//                 {
-//                     printf("%-10s %-50s\n", entry->d_name, "[erro ao ler comando]");
-//                 }
-//                 fclose(comm_file);
-//             }
-//             else
-//             {
-//                 printf("%-10s %-50s\n", entry->d_name, "[erro ao abrir comm]");
-//             }
-//         }
-//     }
-
-//     closedir(dir);
-
-//     printf("\nTotal de processos listados: %d\n\n", process_count);
-// }
-
 void kill_process(const char *pid_str, int force)
 {
     char *endptr;
