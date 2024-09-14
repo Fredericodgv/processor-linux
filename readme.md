@@ -39,4 +39,4 @@ O código utiliza chamadas de sistema diretamente, portanto deve ser compilado c
 Para compilar o programa, execute o seguinte comando:
 
 ```bash
-gcc -o proc proc.c -Wall
+gcc -o proc proc.c
