@@ -32,7 +32,20 @@ Após executar o programa, você pode usar os seguintes comandos:
 
 - **`kill_process(const char *pid_str, int force)`**: Envia um sinal para um processo com base no PID. Usa a chamada de sistema `SYS_kill` para enviar `SIGTERM` (padrão) ou `SIGKILL` (se o argumento `force` for 1).
 
-### Compilação
+## Ambiente de Desenvolvimento
+
+O ambiente utilizado para o desenvolvimento foi o **Visual Studio Code (VSCode)**, que proporciona uma interface leve e produtiva para o desenvolvimento em C. Para a execução do código, foi utilizado o **GCC** como compilador.
+
+### Ferramentas utilizadas:
+- **Editor de Código**: VSCode
+- **Compilador**: GCC (GNU Compiler Collection)
+- **Sistema Operacional**: Linux
+
+## Base do Projeto
+
+Este projeto foi desenvolvido com base no código-fonte do **procps**, que é o pacote que contém o comando `ps`, responsável pela listagem de processos em diversas distribuições Linux. A abordagem aqui implementa funcionalidades semelhantes utilizando diretamente chamadas de sistema para atender ao requisito do trabalho prático.
+
+## Compilação
 
 O código utiliza chamadas de sistema diretamente, portanto deve ser compilado com permissões adequadas e com uma versão recente do compilador GCC.
 
