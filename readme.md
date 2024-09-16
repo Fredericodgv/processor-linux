@@ -43,12 +43,12 @@ O ambiente utilizado para o desenvolvimento foi o **Visual Studio Code (VSCode)*
 
 ## Base do Projeto
 
-Este projeto foi desenvolvido com base no código-fonte do procps, que é o pacote que contém o comando ps, responsável pela listagem de processos em diversas distribuições Linux. A abordagem aqui implementa funcionalidades semelhantes utilizando diretamente chamadas de sistema para atender ao requisito do trabalho prático.
+Este projeto foi desenvolvido com base no código-fonte do **procps**, que é o pacote que contém o comando `ps`, responsável pela listagem de processos em diversas distribuições Linux. A abordagem aqui implementa funcionalidades semelhantes utilizando diretamente chamadas de sistema para atender ao requisito do trabalho prático.
 
-Para a implementação dos requisitos de criação e encerramento de processos/threads, foram utilizados as seguintes referências:
+Para a implementação dos requisitos de criação de processos/threads e manipulação de sinais, foram utilizados os seguintes recursos:
 
-Syscalls para criação de processos e threads: Lista de Syscalls - IME/USP
-Diferença entre fork() e clone(): Explicação sobre fork e clone - Quora
+- **Syscalls para criação de processos e threads**: [Lista de Syscalls - IME/USP](https://www.ime.usp.br/~kon/MAC211/syscalls.html)
+- **Diferença entre `fork()` e `clone()`**: [Explicação sobre fork e clone - Quora](https://www.quora.com/Can-you-explain-the-differences-between-the-fork-and-clone-functions-in-Linux-kernel-programming#:~:text=fork()%20is%20a%20classic,create%20new%20threads%20or%20processes.)
 
 
 ## Compilação
