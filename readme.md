@@ -59,3 +59,10 @@ Para compilar o programa, execute o seguinte comando:
 
 ```bash
 gcc -o proc proc.c
+```
+
+Para utilizar o programa, basta executar o arquivo gerado após a compilação:
+
+```
+./proc
+```
