@@ -41,7 +41,7 @@ O ambiente utilizado para o desenvolvimento foi o **Visual Studio Code (VSCode)*
 - **Compilador**: GCC (GNU Compiler Collection)
 - **Sistema Operacional**: Linux
 
-##Base do Projeto
+## Base do Projeto
 
 Este projeto foi desenvolvido com base no código-fonte do procps, que é o pacote que contém o comando ps, responsável pela listagem de processos em diversas distribuições Linux. A abordagem aqui implementa funcionalidades semelhantes utilizando diretamente chamadas de sistema para atender ao requisito do trabalho prático.
 
